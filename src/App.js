@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './comnponent /Header';
 import MovielList from './comnponent /MovielList';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Booking from './comnponent /Booking';
+import Counter from './comnponent /Counter';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
      <BrowserRouter>
      <Header/>
      <Routes>
-      <Route path={"/"} element={<MovielList/>} />
+      <Route exact path={"/"} element={<MovielList/>} />
       <Route path={"/Booking"} element={<Booking/>}/>
+      <Route path='/counter' element={<Counter/>}/>
       
      </Routes>
      </BrowserRouter>

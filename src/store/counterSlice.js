@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   name: "",
   seats: [],
-
   numberofticket: 0,
   amt: 0,
 };
@@ -23,7 +22,7 @@ export const counterSlice = createSlice({
     },
     TotalAmount: (state, action) => {
       state.amt = state.amt + action.payload;
-    },
+    }, 
   },
 });
 export const { Seatnumber, MovieTital, NumberOfTicket, TotalAmount } =

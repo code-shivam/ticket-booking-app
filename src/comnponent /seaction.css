@@ -1,0 +1,24 @@
+section{
+    width: 65rem;
+    margin: auto;
+ }
+ button{
+    padding: 0.8rem;
+    margin: 0.4rem;
+    background-color: rgba(0, 0, 255, 0.485);
+    color: white;
+    border-radius: 0.7rem; 
+    
+  }
+ button:hover{
+    background-color: rgba(77, 146, 29, 0.811);
+ }
+ button:focus{
+    background-color: rgba(146, 60, 29, 0.811);
+ }
+ .disabled{
+    background-color: rgba(255, 0, 0, 0.655);
+    color: white;
+    border: none;
+  } 
+   
