@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "./counter.css";
+import Timer from "../Timer/Timer";
 function Counter() {
   const seats = useSelector((state) => state.counter.seats);
   const moviename = useSelector((state) => state.counter.name);
@@ -20,7 +21,8 @@ function Counter() {
   return (
     <div className="main">
       <div className="counter">
-        <h1>Book your ticket and enjoy the movie</h1>
+         <Timer/>
+         <h1>book your ticket</h1> 
         <h2>Movie Name </h2>
         <p>{moviename}</p>
         <h2>Seat Number</h2>
@@ -32,6 +34,7 @@ function Counter() {
         <div>
           <button onClick={() => counter()}> book now</button>
           <button onClick={Back}>Back</button>
+         
         </div>
       </div>
     </div>

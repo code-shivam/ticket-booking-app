@@ -4,6 +4,7 @@ import SeactionB from "./SeactionB";
 import SeactionC from "./SeactionC";
 import "./book.css"
 import { useNavigate } from "react-router-dom";
+import Timer from "../Timer/Timer";
 
 function Booking() {
   const navigation =useNavigate()
@@ -11,6 +12,7 @@ function Booking() {
    navigation("/counter")
   } 
   return <div>
+    <Timer/>
     <SeactionA/>
     <hr/>
     <SeactionB/>
